@@ -1,0 +1,23 @@
+        .card-container {
+            align-items: center;
+        }
+        
+        .card-content {
+            max-width: 800px;
+            margin: 10px auto;
+        }
+        
+        h3 {
+            text-align: center;
+        }
+        
+        .mat-actions-btn {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .spiner {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }

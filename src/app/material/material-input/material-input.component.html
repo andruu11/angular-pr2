@@ -1,0 +1,23 @@
+<h3>Input basicos</h3>
+<div>
+    <mat-form-field>
+        <input matInput type="text" placeholder="Nombre" [value]="usuario.nombre" (keyup)="onKeyUp($event)" (blur)="onBlur($event)">
+    </mat-form-field>
+</div>
+
+<h3>Prefijos y Sufijos</h3>
+<div>
+    <mat-form-field>
+        <span matPrefix> +591&nbsp; </span>
+        <input matInput type="text" placeholder="Telefono">
+        <span matSuffix>Es mi numero</span>
+    </mat-form-field>
+</div>
+
+<h3>Prefijos y Sufijos</h3>
+<div>
+    <mat-form-field>
+        <input matInput type="text" placeholder="Dirección">
+        <mat-hint>Calle y numero de domicilio</mat-hint>
+    </mat-form-field>
+</div>
