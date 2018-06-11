@@ -1,0 +1,23 @@
+<div>
+    <mat-card class="card-select">
+        <mat-form-field>
+            <mat-select placeholder="Seleeccione una camara" [(ngModel)]="currentCamera">
+                <mat-option *ngFor="let camera of cameras" [value]="camera" (click)="onSelectCamera(camera)">
+                    {{camera}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </mat-card>
+    <div class="card-container">
+        <mat-card class="card-content-mars" *ngFor="let marsImage of marsImages">
+            <mat-card-header>
+                <mat-card-title>{{marsImage.rover.name}}
+                </mat-card-title>
+                <mat-card-subtitle>{{marsImage.earth_date | date: 'mediumDate'}}
+                </mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image [src]="marsImage.img_src" alt="">
+        </mat-card>
+    </div>
+
+</div>
